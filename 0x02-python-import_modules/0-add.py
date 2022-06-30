@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 if __name__ == "__main__":
     import add_o as add
     a = 1
