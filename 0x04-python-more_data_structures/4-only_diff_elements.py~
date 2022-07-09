@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+
+def only_diff_elements(set_1, set_2):
+    common = [lans for lans in set_1 for lans2 in set_2 if lans == lans2]
+    difference = set_1.append(set_2).pop(common)
+    return(defference)
