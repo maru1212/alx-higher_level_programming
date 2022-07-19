@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 
 class Square:
-    pass
+    """Represent a square."""
 
-def main():
-    S = Square()
-    print(type(S))
-    print(S.__dict__)
+    def __init__(self, size):
+        """Initialize a new square.
 
-main()
+        Args:
+             size(int): The size of the new square.
+        """
+        self._size = size
