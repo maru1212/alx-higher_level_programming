@@ -10,9 +10,10 @@ class Square:
         """Initialize a new square.
 
         Args:
-             size(int): The size of the new square
+            size (int): The size of the new square.
         """
-        self.__size = size
+        self.size = size
+
     @property
     def size(self):
         """Get/set the current size of the square."""
@@ -27,5 +28,5 @@ class Square:
         self.__size = value
 
     def area(self):
-        """Find the area of a square."""
+        """Return the current area of the square."""
         return (self.__size * self.__size)
