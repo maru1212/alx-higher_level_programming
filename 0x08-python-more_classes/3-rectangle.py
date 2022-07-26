@@ -56,15 +56,15 @@ class Rectangle:
         return(2 * (self.__width + self.__height))
 
     def __str__(self):
-        """Retrurn readable form."""
+        """Return the printable representation of the Rectangle.
+        Represents the rectangle with the # character.
+        """
+        if self.__width == 0 or self.__height == 0:
+            return ("")
 
-        if self.__width == 0 and self.__height == 0:
-            return("")
-
-        rec = []
+        rect = []
         for i in range(self.__height):
-            for j in range(self.__width):
-                rec.append("#")
+            [rect.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
-                rec.append("\n")
-        return("".join(rec))
+                rect.append("\n")
+        return ("".join(rect))
