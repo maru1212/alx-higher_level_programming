@@ -1,0 +1,1 @@
+This directory includes all the projects about class inheritance 
