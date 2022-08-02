@@ -2,7 +2,7 @@
 """ Author: Maranata Feleke, an emtpy class. """
 
 
-class BaseGeometry():
+class BaseGeometry:
     """ This is an empty class. """
 
     def area(self):
