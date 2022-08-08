@@ -30,4 +30,4 @@ class Student:
             json(dict): a dictionary which will be converted to attr
         """
         for k, v in json.items():
-            return getattr(self, k, v)
+            setattr(self, k, v)
