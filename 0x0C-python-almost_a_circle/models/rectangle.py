@@ -8,6 +8,7 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initializer which includes attributes.
+
         Args:
             width(int): the width of the rectangle.
             height (int): the height of the rectangle.
@@ -20,6 +21,7 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         super().__init__(id)
+
     @property
     def width(self):
         """Get width"""
