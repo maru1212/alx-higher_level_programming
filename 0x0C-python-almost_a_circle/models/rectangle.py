@@ -14,7 +14,7 @@ class Rectangle(Base):
             x (int): x attr.
             y (int): y attr.
         """
-        
+
         self.width = width
         self.height = height
         self.x = x
@@ -24,7 +24,7 @@ class Rectangle(Base):
     def width(self):
         """Get width"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         self.__width = value
@@ -33,7 +33,7 @@ class Rectangle(Base):
     def height(self):
         """Get height"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         self.__height = value
@@ -42,7 +42,7 @@ class Rectangle(Base):
     def x(self):
         """Get x"""
         return self.__x
-    
+
     @x.setter
     def x(self, value):
         self.__x = value
@@ -51,7 +51,7 @@ class Rectangle(Base):
     def y(self):
         """Get y"""
         return self.__y
-    
+
     @y.setter
     def y(self, value):
         self.__y = value
