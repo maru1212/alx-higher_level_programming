@@ -79,6 +79,10 @@ class Rectangle(Base):
 
     def display(self):
         """A function which desplays the rectange with # format."""
+        if self.__width == 0 or self.__height == 0:
+            print("")
+            return
+
         for i in range(self.__width):
             for j in range(self.__height):
                 print("#", end= "")
