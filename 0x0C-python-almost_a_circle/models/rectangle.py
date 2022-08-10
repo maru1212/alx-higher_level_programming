@@ -80,14 +80,14 @@ class Rectangle(Base):
     def display(self):
         """Print the Rectangle using the '#' character."""
         if self.__width == 0 or self.__height == 0:
-            print ("")
+            print("")
             return ()
 
         for i in range(self.__height):
-            [print("#", end= "") for j in range(self.__width)]
-            print ("")
+            [print("#", end="") for j in range(self.__width)]
+            print("")
 
     def __str__(self):
         """A string initiater which returns a string."""
-        return ("[{}] ({}) {}/{} - {}/{}".format(__class__.__name__, self.id,\
-            self.x, self.y, self.width, self.height))
+        return ("[{}] ({}) {}/{} - {}/{}".format(__class__.__name__, self.id,
+                                                 self.x, self.y, self.width, self.height))
