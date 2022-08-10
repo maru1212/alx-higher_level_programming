@@ -86,3 +86,8 @@ class Rectangle(Base):
         for i in range(self.__height):
             [print("#", end= "") for j in range(self.__width)]
             print("")
+
+    def __str__(self):
+        """A string initiater which returns a string."""
+        return ("[{}] ({}) {}/{} - {}/{}".format(__class__.__name__, self.id,\
+            self.x, self.y, self.width, self.height))
