@@ -90,4 +90,5 @@ class Rectangle(Base):
     def __str__(self):
         """A string initiater which returns a string."""
         return ("[{}] ({}) {}/{} - {}/{}".format(__class__.__name__, self.id,
-                                                 self.x, self.y, self.width, self.height))
+                                                 self.x, self.y, self.width,
+                                                 self.height))
