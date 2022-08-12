@@ -123,7 +123,6 @@ class Rectangle(Base):
                     self.y = argument
                 inc += 1
         elif kwargs and len(kwargs) != 0:
-            inc = 0
             for k, v in kwargs.items():
                 if k == "id":
                     if v is None:
@@ -138,4 +137,3 @@ class Rectangle(Base):
                     self.x = v
                 elif k == "y":
                     self.y = v
-                inc += 1
