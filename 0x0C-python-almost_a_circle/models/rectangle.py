@@ -105,19 +105,37 @@ class Rectangle(Base):
                 - 4th argument is the x attribute.
                 - 5th argument is the y attribute.
         """
-        inc = 0
-        for argument in args:
-            if inc == 0:
-                if argument is None:
-                    self.__init__(self.width, self.height, self.x, self.y)
-                else:
-                    self.id = argument
-            if inc == 1:
-                self.width = argument
-            elif inc == 2:
-                self.height = argument
-            elif inc == 3:
-                self.x = argument
-            elif inc == 4:
-                self.y = argument
-            inc += 1
+        if args and len(args) != 0:
+            inc = 0
+            for argument in args:
+                if inc == 0:
+                    if argument is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = argument
+                elif inc == 1:
+                    self.width = argument
+                elif inc == 2:
+                    self.height = argument
+                elif inc == 3:
+                    self.x = argument
+                elif inc == 4:
+                    self.y = argument
+                inc += 1
+        elif kwargs and len(kwargs) != 0:
+            inc = 0
+            for k, v in kwargs.items():
+                if k == "id":
+                    if v is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = v
+                elif k == "width":
+                    self.width = v
+                elif k == "height":
+                    self.height = v
+                elif k == "x":
+                    self.x = v
+                elif k == "y":
+                    self.y = v
+                inc += 1
