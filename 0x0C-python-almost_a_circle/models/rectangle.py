@@ -94,3 +94,30 @@ class Rectangle(Base):
         return ("[{}] ({}) {}/{} - {}/{}".format(__class__.__name__, self.id,
                                                  self.x, self.y, self.width,
                                                  self.height))
+
+    def update(self, *args):
+        """Update the arguments of the rectangle.
+        Args:
+            *args (int): the new arguments.
+                - 1st argument is the id attribute.
+                - 2nd argument is the width attribute.
+                - 3rd argument is the height attribute.
+                - 4th argument is the x attribute.
+                - 5th argument is the y attribute.
+        """
+        inc = 0
+        for argument in args:
+            if inc == 0:
+                if argument is None:
+                    self.__init__(self.width, self.height, self.x, self.y)
+                else:
+                    self.id = argument
+            if inc == 1:
+                self.width = argument
+            elif inc == 2:
+                self.height = argument
+            elif inc == 3:
+                self.x = argument
+            elif inc == 4:
+                self.y = argument
+            inc += 1
